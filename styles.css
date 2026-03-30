@@ -3,7 +3,7 @@
 --text: #111844;
 --accent: #aa1945;
 --secondary: #69524b;
---card: #ffffff;
+--card: transparent;
 }
 
 body.dark {
@@ -11,7 +11,7 @@ body.dark {
 --text: #ffffff;
 --accent: #aa1945;
 --secondary: #dbb396;
---card: #1c255c;
+--card: transparent;
 }
 
 body {
