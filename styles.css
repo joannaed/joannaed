@@ -183,6 +183,14 @@ a:hover {
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 6px;
+    z-index: 9999;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    transition: opacity 0.2s ease;
+}
+
+.toggle:hover {
+    opacity: 0.85;
 }
 
 /* FOOTER */
