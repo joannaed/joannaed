@@ -1,85 +1,101 @@
 <!DOCTYPE html>
 
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8">
-  <title>Imię Nazwisko – Portfolio Akademickie</title>
+  <title>Joanna Płachcińska – Redakcja i Copywriting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon -->
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- style -->
 
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<button class="toggle" onclick="toggleTheme()">Tryb kontrastowy</button>
+  <span class="deco-q-left" aria-hidden="true">&#8222;</span>
+  <span class="deco-q-right" aria-hidden="true">&#8221;</span>
+  <span class="deco-f-left" aria-hidden="true">❧</span>
+  <span class="deco-f-right" aria-hidden="true">❧</span>
 
-<header>
-  <img src="images/profile.jpg" alt="Zdjęcie profilowe" class="profile-img">
-  <h1>Imię Nazwisko</h1>
-  <p class="subtitle">Adiunkt / Doktorant – Uczelnia</p>
-</header>
+  <button class="toggle" onclick="toggleTheme()">Tryb kontrastowy</button>
 
-<div class="container">
+  <header>
+    <img src="images/profile.jpg" alt="Zdjęcie profilowe" class="profile-img">
+    <h1>Joanna Płachcińska</h1>
+    <h3>jplachcinska.red@gmail.com</h3>
+    <p class="subtitle">Redaktorka | Korektorka | Copywriterka</p>
+  </header>
 
-  <section class="section">
-    <h2>O mnie</h2>
-    <p>
-      Krótki opis naukowy. Twoje zainteresowania badawcze, specjalizacja,
-      granty, współprace.
-    </p>
-  </section>
+  <div class="container">
 
-  <section class="section">
-    <h2>Publikacje</h2>
-    <ul>
-      <li>Autor, I. (2024). Tytuł publikacji. <i>Czasopismo</i></li>
-      <li>Autor, I. (2023). Tytuł artykułu. <i>Konferencja</i></li>
-    </ul>
-  </section>
+    <section class="section about-section">
+      <h2>O mnie</h2>
+      <div class="about-flex">
+        <div class="about-photo">
+          <img src="images/omnie.jpg" alt="Moje zdjęcie">
+        </div>
+        <div class="about-text">
+          <p>
+            Cześć! Z&nbsp;wykształcenia jestem redaktorką i&nbsp;korektorką, w&nbsp;sercu – miłośniczką języka polskiego. Tworzę także różnorodne teksty – opisy, artykuły, notki biograficzne. Potrafię zrobić porządny research.
+          </p>
+          <p>
+            Zredaguję Twój tekst, zrobię jego korektę, wyszukam informacje lub napiszę tekst.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <section class="section">
-    <h2>Projekty badawcze</h2>
+      <section class="section">
+        <h2>Portfolio copywriterskie</h2>
+        <p class="download-portfolio">
+          <a href="portfolio.pdf" target="_blank">📄 Pobierz portfolio (PDF)</a>
+        </p>
+      </section>
 
-```
-<div class="gallery">
-  <div class="card">
-    <img src="images/project1.jpg" alt="Projekt 1">
-    <p>Opis projektu 1</p>
+      <section class="section">
+        <h2>Redagowane publikacje</h2>
+        <ul class="fleuron-list">
+          <li><em>Napisz e-book w&nbsp;3&nbsp;dni przy pomocy sztucznej inteligencji i&nbsp;zarabiaj przez wiele lat</em> autorstwa P.&nbsp;Guta oraz K.&nbsp;Dalekiego (wydane) – redakcja i&nbsp;korekta</li>
+          <li><em>Tańcząca z&nbsp;mrokiem</em> autorstwa I.&nbsp;Sierzputowskiej (niewydane) – redakcja i&nbsp;korekta</li>
+          <li><em>Córka ciszy</em> autorstwa Eliany Grace (wydane) – redakcja i&nbsp;korekta</li>
+          <li><em>Dom i&nbsp;rodzina jako źródło wsparcia zdrowia młodego sportowca. Broszura dla rodziców i&nbsp;opiekunów młodych sportowców</em> autorstwa A.&nbsp;Dzielskiej, A.&nbsp;Liber, J.&nbsp;Rachtan, A.&nbsp;Fijałkowskiej – korekta</li>
+          <li><em>Dobre intencje</em> autorstwa Agnieszki Chruściel (niewydane) – redakcja</li>
+        </ul>
+      </section>
+
+    <section class="section">
+      <h2>Wykształcenie</h2>
+      <ul class="fleuron-list">
+        <li>Edytorstwo, Uniwersytet Jagielloński (obecnie)</li>
+        <li>Filologia polska (specjalizacja: edytorstwo), Uniwersytet Wrocławski (2021–2025)</li>
+        <li>Socjologia (specjalizacja: komunikacja społeczna), Uniwersytet Wrocławski (2020–2023)</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Kontakt</h2>
+      <p>E-mail: <a href="mailto:jplachcinska.red@gmail.com">jplachcinska.red@gmail.com</a></p>
+    </section>
+
   </div>
 
-  <div class="card">
-    <img src="images/project2.jpg" alt="Projekt 2">
-    <p>Opis projektu 2</p>
-  </div>
-</div>
-```
+  <footer>
+    © 2026 Joanna Płachcińska
+  </footer>
 
-  </section>
-
-  <section class="section">
-    <h2>Dydaktyka</h2>
-    <ul>
-      <li>Nazwa kursu – uczelnia</li>
-      <li>Nazwa kursu – uczelnia</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Kontakt</h2>
-    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-    <p>
-      ORCID: <a href="#">link</a><br>
-      Google Scholar: <a href="#">link</a>
-    </p>
-  </section>
-
-</div>
-
-<footer>
-  © 2026 Imię Nazwisko
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
