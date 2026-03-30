@@ -1,17 +1,17 @@
 :root {
---bg: #f9f7f4;
---text: #2c2c2c;
---accent: #1e3a5f;
---secondary: #8b5e3c;
+--bg: #dbb396;
+--text: #111844;
+--accent: #aa1945;
+--secondary: #69524b;
 --card: #ffffff;
 }
 
 body.dark {
---bg: #0f1720;
---text: #e5e7eb;
---accent: #60a5fa;
---secondary: #c4a484;
---card: #1a1f2b;
+--bg: #111844;
+--text: #ffffff;
+--accent: #aa1945;
+--secondary: #dbb396;
+--card: #1c255c;
 }
 
 body {
