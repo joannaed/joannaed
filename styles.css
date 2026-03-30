@@ -243,65 +243,62 @@ footer {
 /* OZDOBNIKI LITERACKIE W TLE (TYLKO DUŻE EKRANY) */
 @media (min-width: 1200px) {
 
-    /* Lewy cudzysłów */
-    body::before {
-        content: "„";
-        /* Polski drukarski otwierający */
+    .deco-q-left,
+    .deco-q-right,
+    .deco-f-left,
+    .deco-f-right {
+        display: block;
         position: fixed;
+        pointer-events: none;
+        z-index: -1;
+        color: var(--accent);
+        font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
+        line-height: 0;
+    }
+
+    /* Lewy cudzysłów */
+    .deco-q-left {
+        content: "„";
         top: 25%;
         left: 2%;
-        transform: translateY(-50%);
-        font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
         font-size: 35rem;
-        color: var(--accent);
         opacity: 0.05;
-        z-index: -1;
-        line-height: 0;
+        transform: translateY(-50%);
     }
 
     /* Prawy cudzysłów */
-    body::after {
-        content: "”";
-        /* Polski drukarski zamykający */
-        position: fixed;
+    .deco-q-right {
         top: 25%;
         right: 2%;
-        transform: translateY(-50%);
-        font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
         font-size: 35rem;
-        color: var(--accent);
         opacity: 0.05;
-        z-index: -1;
-        line-height: 0;
+        transform: translateY(-50%);
     }
 
     /* Lewy fleuron */
-    .container::before {
-        content: "❧";
-        position: fixed;
+    .deco-f-left {
         bottom: 15%;
         left: 4%;
-        font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
         font-size: 15rem;
-        color: var(--accent);
         opacity: 0.06;
-        z-index: -1;
-        line-height: 0;
     }
 
-    /* Prawy fleuron */
-    .container::after {
-        content: "❧";
-        position: fixed;
+    /* Prawy fleuron - odbicie lustrzane */
+    .deco-f-right {
         bottom: 15%;
         right: 4%;
-        transform: scaleX(-1);
-        /* Odwrócony symetrycznie fleuron */
-        font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
         font-size: 15rem;
-        color: var(--accent);
         opacity: 0.06;
-        z-index: -1;
-        line-height: 0;
+        transform: scaleX(-1);
+    }
+}
+
+/* Na małych ekranach – ukryj ozdobniki */
+@media (max-width: 1199px) {
+    .deco-q-left,
+    .deco-q-right,
+    .deco-f-left,
+    .deco-f-right {
+        display: none;
     }
 }
