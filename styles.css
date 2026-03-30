@@ -16,7 +16,7 @@ body.dark {
 
 body {
 margin: 0;
-font-family: "Georgia", serif;
+font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
 background: var(--bg);
 color: var(--text);
 line-height: 1.7;
