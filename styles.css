@@ -127,6 +127,41 @@ a:hover {
   padding-left: 1.5rem;
 }
 
+.portfolio-thumbnail {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.portfolio-thumbnail:hover {
+  transform: scale(1.02);
+}
+
+.thumb-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.download-portfolio {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.download-portfolio a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.download-portfolio a:hover {
+  text-decoration: underline;
+}
+
 .fleuron-list li {
   position: relative;
   margin-bottom: 1.2rem;
