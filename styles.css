@@ -133,3 +133,51 @@ font-size: 0.9rem;
 padding: 2rem 1rem;
 border-top: 1px solid #ccc;
 }
+
+/* NOWE UKŁADY (GRID / FLEX) */
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.about-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.about-photo img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .grid-2-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid-2-cols .section {
+    margin: 0; 
+    height: 100%;
+  }
+
+  .about-flex {
+    flex-direction: row;
+  }
+
+  .about-photo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .about-text {
+    flex: 2;
+  }
+}
