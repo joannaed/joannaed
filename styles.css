@@ -190,3 +190,66 @@ border-top: 1px solid #ccc;
     flex: 2;
   }
 }
+
+/* OZDOBNIKI LITERACKIE W TLE (TYLKO DUŻE EKRANY) */
+@media (min-width: 1200px) {
+  
+  /* Lewy cudzysłów */
+  body::before {
+    content: "“";
+    position: fixed;
+    top: 25%;
+    left: 2%;
+    transform: translateY(-50%);
+    font-family: inherit;
+    font-size: 35rem;
+    color: var(--accent);
+    opacity: 0.05;
+    z-index: -1;
+    line-height: 0;
+  }
+
+  /* Prawy cudzysłów */
+  body::after {
+    content: "”";
+    position: fixed;
+    top: 25%;
+    right: 2%;
+    transform: translateY(-50%);
+    font-family: inherit;
+    font-size: 35rem;
+    color: var(--accent);
+    opacity: 0.05;
+    z-index: -1;
+    line-height: 0;
+  }
+
+  /* Lewy fleuron */
+  .container::before {
+    content: "❧";
+    position: fixed;
+    bottom: 15%;
+    left: 4%;
+    font-family: inherit;
+    font-size: 15rem;
+    color: var(--accent);
+    opacity: 0.06;
+    z-index: -1;
+    line-height: 0;
+  }
+
+  /* Prawy fleuron */
+  .container::after {
+    content: "❧";
+    position: fixed;
+    bottom: 15%;
+    right: 4%;
+    transform: scaleX(-1); /* Odwrócony symetrycznie fleuron */
+    font-family: inherit;
+    font-size: 15rem;
+    color: var(--accent);
+    opacity: 0.06;
+    z-index: -1;
+    line-height: 0;
+  }
+}
