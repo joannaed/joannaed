@@ -117,6 +117,22 @@ a:hover {
 color: var(--secondary);
 }
 
+.download-portfolio {
+text-align: center;
+margin: 2.5rem 0;
+}
+
+.download-portfolio a {
+font-size: 1.4rem;
+font-weight: 500;
+color: var(--accent);
+transition: all 0.3s ease;
+}
+
+.download-portfolio a:hover {
+text-decoration: underline;
+}
+
 /* BUTTON */
 .toggle {
 position: fixed;
