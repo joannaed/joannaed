@@ -3,7 +3,7 @@
 --text: #111844;
 --accent: #aa1945;
 --secondary: #69524b;
---card: transparent;
+--card: rgba(255, 255, 255, 0.3);
 }
 
 body.dark {
@@ -11,7 +11,7 @@ body.dark {
 --text: #ffffff;
 --accent: #aa1945;
 --secondary: #dbb396;
---card: transparent;
+--card: rgba(255, 255, 255, 0.05);
 }
 
 body {
