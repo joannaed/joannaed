@@ -16,7 +16,7 @@ body.dark {
 
 body {
 margin: 0;
-font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
+font-family: 'Inter', sans-serif;
 background: var(--bg);
 color: var(--text);
 line-height: 1.7;
@@ -57,6 +57,10 @@ border-radius: 10px;
 }
 
 /* TYPO */
+h1, h2, h3 {
+font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
+}
+
 h1 {
 letter-spacing: 1px;
 }
