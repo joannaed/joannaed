@@ -63,6 +63,8 @@ object-fit: cover;
 border-radius: 0;
 margin-bottom: 0;
 z-index: -2;
+filter: blur(8px);
+transform: scale(1.05);
 }
 
 .subtitle {
