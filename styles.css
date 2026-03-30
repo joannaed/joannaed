@@ -196,12 +196,12 @@ border-top: 1px solid #ccc;
   
   /* Lewy cudzysłów */
   body::before {
-    content: "“";
+    content: "„"; /* Polski drukarski otwierający */
     position: fixed;
     top: 25%;
     left: 2%;
     transform: translateY(-50%);
-    font-family: inherit;
+    font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
     font-size: 35rem;
     color: var(--accent);
     opacity: 0.05;
@@ -211,12 +211,12 @@ border-top: 1px solid #ccc;
 
   /* Prawy cudzysłów */
   body::after {
-    content: "”";
+    content: "”"; /* Polski drukarski zamykający */
     position: fixed;
     top: 25%;
     right: 2%;
     transform: translateY(-50%);
-    font-family: inherit;
+    font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
     font-size: 35rem;
     color: var(--accent);
     opacity: 0.05;
@@ -230,7 +230,7 @@ border-top: 1px solid #ccc;
     position: fixed;
     bottom: 15%;
     left: 4%;
-    font-family: inherit;
+    font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
     font-size: 15rem;
     color: var(--accent);
     opacity: 0.06;
@@ -245,7 +245,7 @@ border-top: 1px solid #ccc;
     bottom: 15%;
     right: 4%;
     transform: scaleX(-1); /* Odwrócony symetrycznie fleuron */
-    font-family: inherit;
+    font-family: "Baskerville", "Libre Baskerville", Georgia, serif;
     font-size: 15rem;
     color: var(--accent);
     opacity: 0.06;
