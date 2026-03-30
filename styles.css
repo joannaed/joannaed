@@ -80,7 +80,7 @@ padding: 1rem;
 }
 
 .section {
-margin: 2rem 0;
+margin: 3rem 0;
 padding: 1.5rem;
 background: var(--card);
 border-radius: 10px;
@@ -140,7 +140,7 @@ border-top: 1px solid #ccc;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .about-flex {
@@ -164,7 +164,6 @@ border-top: 1px solid #ccc;
   
   .grid-2-cols .section {
     margin: 0; 
-    height: 100%;
   }
 
   .about-flex {
